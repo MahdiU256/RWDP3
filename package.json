@@ -1,0 +1,22 @@
+{
+  "name": "rwdp3",
+  "version": "1.0.0",
+  "description": "This JSON file will compile Sass for this project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahdiU256/RWDP3.git"
+  },
+  "author": "Mahdi Uddin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MahdiU256/RWDP3/issues"
+  },
+  "homepage": "https://github.com/MahdiU256/RWDP3#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
