@@ -1,1 +1,143 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel|Manjari&display=swap');
+
+$pc: hsl(40, 65%, 91%);
+$sc: hsl(250, 75%, 90%);
+$tc: hsl(190, 25%, 92.5%);
+$T: 'Cinzel', serif;
+$t: 'Manjari', sans-serif;
+
+body {
+    background-color: $pc; 
+    font-family: $t;
+    font-size: 3vh;
+    
+    
+    #header {
+        background-color: $tc; 
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 25vh;
+        margin: auto;
+        
+        #header-img {
+            display: block;
+            margin: 5px 0;
+            padding: 5px;
+            width: 90vw;
+        }
+        
+        #nav-bar {
+            display: grid;
+            grid-area: 1/1/4/1;
+            width: 100%;
+
+            .nav-link {
+                background-color: $sc;
+                display: block;
+                margin: auto;
+                border: 1px solid black;
+                padding: 5px 0px;
+                width: inherit;
+                color: black;
+                font-family: $T;
+                font-weight: bold;
+                text-align: center; 
+                text-decoration: none;
+
+            }
+        }
+    }
+    
+    #main {
+        width: 90vw;
+        height: 70vh;
+        display: block;
+        margin: 30vh auto 2vh auto;
+        padding: 5vh 5vw;
+        
+        .button {
+            background-color: $tc;
+            margin: auto;
+            border: 1px solid $sc;
+            border-radius: 5px;
+            padding: 2vh;
+            font-family: $T;
+            font-size: 5vh;
+        }
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                text-align: center;
+                font-family: $T;
+            }
+
+            #email {
+                background-color: $sc;
+                display: block;
+                width: 90%;
+                margin: auto auto 5vh auto;
+                border: 1px solid $sc;
+                border-radius: 5px;
+                padding: 5px;
+                font-family: $t;
+                font-size: 4vh;
+                text-align: center;
+            }
+        }
+
+        #features {
+            display: grid;
+            grid-template-rows: repeat(3, auto);
+            grid-template-columns: 20% 80%;
+            grid-area: 1 / 1 / 4 / 3;
+
+            i.fas {
+                width: 100%;
+                display: block;
+                outline-color: black; 
+                margin: auto;
+                color: $sc;
+            }
+        }
+        
+        #how-it-works {
+            width: inherit;
+            height: 56.25vh;
+
+            #video {
+                width: 100%;
+                height: inherit;
+                display: block;
+                margin: auto;
+                padding: auto;
+            }
+        }
+
+        #pricing {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .p-heading {font-family: $T;}
+            .box {
+                width: 50%;
+                margin: 5px auto;
+                border: 1px solid black;
+                padding: 5px;
+            }
+            .box, .lorem {text-align: center;}
+            .price {font-weight: bolder;}
+        }
+        
+
+    }
+}

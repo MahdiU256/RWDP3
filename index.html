@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product Landing Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,22 +20,22 @@
     <article id="main">
         <form id="form" method="POST" action="https://www.freecodecamp.com/email-submit">
             <h2>Handcrafted, home-made masterpieces</h2>
-        <input id="email" name="email" type="email" placeholder="Enter your email address" autofocus>
-        <input id="submit" name="submit" type="submit" value="Submit">
+            <input id="email" name="email" type="email" placeholder="Enter your email address" autofocus>
+            <input id="submit" class="button" name="submit" type="submit" value="Submit">
         </form>
         <hr>
         <section id="features">
-            <i id="icon-1" class="fas fa-comment-dollar"></i>
+            <i id="icon-1" class="fas fa-comment-dollar fa-3x"></i>
             <div id="text-1">
                 <h3 class="f-header">Premium Materials</h3>
                 <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
             </div>
-            <i id="icon-2" class="fas fa-shipping-fast"></i>
+            <i id="icon-2" class="fas fa-shipping-fast fa-3x"></i>
             <div id="text-2">
                 <h3 class="f-header"> Fast Shipping</h3>
                 <p>We make sure you receive your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
             </div>
-            <i id="icon-3" class="fa fa-check-circle"></i>
+            <i id="icon-3" class="fas fa-check-circle fa-3x"></i>
             <div id="text-3">
                 <h3 class="f-header">Quality Assurance</h3>
                 <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
@@ -42,11 +43,11 @@
         </section>
         <hr>
         <article id="how-it-works">
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="video" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
         <hr>
         <article id="pricing">
-            <section id="tenor">
+            <section id="tenor" class='box'>
                 <h3 class="p-heading">Tenor Trombone</h3>
                 <span class="price">$600</span>
                 <div class="lorem">
@@ -55,9 +56,9 @@
                     <p>Lorem ipsum dolor.</p>
                     <p>Lorem ipsum.</p>
                 </div>
-                <button class="select">Select</button>
+                <button class="button">Select</button>
             </section>
-            <section id="tenor">
+            <section id="tenor" class='box'>
                 <h3 class="p-heading">Bass Trombone</h3>
                 <span class="price">$900</span>
                 <div class="lorem">
@@ -66,9 +67,9 @@
                     <p>Lorem ipsum dolor.</p>
                     <p>Lorem ipsum.</p>
                 </div>
-                <button class="select">Select</button>
+                <button class="button">Select</button>
             </section>
-            <section id="tenor">
+            <section id="tenor" class='box'>
                 <h3 class="p-heading">Valve Trombone</h3>
                 <span class="price">$1200</span>
                 <div class="lorem">
@@ -77,10 +78,9 @@
                     <p>Lorem ipsum dolor.</p>
                     <p>Lorem ipsum.</p>
                 </div>
-                <button class="select">Select</button>
+                <button class="button">Select</button>
             </section>
         </article>
     </article>
-    <script src="https://kit.fontawesome.com/590850a915.js"></script>
 </body>
 </html>
