@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel|Manjari&display=swap');
 
-$pc: hsl(40, 65%, 91%);
-$sc: hsl(250, 75%, 90%);
-$tc: hsl(190, 25%, 92.5%);
+$pc: hsl(40, 65%, 90%);
+$sc: hsl(250, 95%, 10%);
+$tc: hsl(190, 5%, 90%);
 $T: 'Cinzel', serif;
 $t: 'Manjari', sans-serif;
 
@@ -35,7 +35,8 @@ body {
             width: 100%;
 
             .nav-link {
-                background-color: $sc;
+                background-color: $tc;
+                color: $sc;
                 display: block;
                 margin: auto;
                 border: 1px solid black;
@@ -67,7 +68,7 @@ body {
             font-family: $T;
             font-size: 5vh;
         }
-
+        
         #form {
             display: flex;
             flex-direction: column;
@@ -78,9 +79,10 @@ body {
                 text-align: center;
                 font-family: $T;
             }
-
+            
             #email {
-                background-color: $sc;
+                background-color: $tc;
+                color: $sc;
                 display: block;
                 width: 90%;
                 margin: auto auto 5vh auto;
