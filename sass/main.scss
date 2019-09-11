@@ -10,136 +10,151 @@ body {
     background-color: $pc; 
     font-family: $t;
     font-size: 3vh;
+}
+
+#header {
+    background-color: $tc; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 25vh;
+    margin: auto;
     
-    
-    #header {
-        background-color: $tc; 
+    #header-img {
         display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 25vh;
         margin: auto;
-        
-        #header-img {
-            display: block;
-            margin: 5px 0;
-            padding: 5px;
-            width: 90vw;
-        }
-        
-        #nav-bar {
-            display: grid;
-            grid-area: 1/1/4/1;
-            width: 100%;
-
-            .nav-link {
-                background-color: $tc;
-                color: $sc;
-                display: block;
-                margin: auto;
-                border: 1px solid black;
-                padding: 5px 0px;
-                width: inherit;
-                color: black;
-                font-family: $T;
-                font-weight: bold;
-                text-align: center; 
-                text-decoration: none;
-
-            }
-        }
+        padding: 10px 0;
+        width: 90vw;
     }
     
-    #main {
-        width: 90vw;
-        height: 70vh;
-        display: block;
-        margin: 30vh auto 2vh auto;
-        padding: 5vh 5vw;
-        
-        .button {
+    #nav-bar {
+        display: grid;
+        grid-area: 1/1/4/1;
+        width: 100%;
+
+        .nav-link {
             background-color: $tc;
+            color: $sc;
+            display: block;
             margin: auto;
+            border: 1px solid black;
+            padding: 5px 0px;
+            width: inherit;
+            color: black;
+            font-family: $T;
+            font-weight: bold;
+            text-align: center; 
+            text-decoration: none;
+
+        }
+    }
+}
+
+#main {
+    width: 90vw;
+    height: 70vh;
+    display: block;
+    margin: 30vh auto 2vh auto;
+    padding: 5vh 0;
+    
+    .button {
+        background-color: $tc;
+        margin: auto;
+        border: 1px solid $sc;
+        border-radius: 5px;
+        padding: 2vh;
+        font-family: $T;
+        font-size: 5vh;
+    }
+    
+    #form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+            font-family: $T;
+        }
+        
+        #email {
+            background-color: $tc;
+            color: $sc;
+            display: block;
+            width: 90%;
+            margin: auto auto 5vh auto;
             border: 1px solid $sc;
             border-radius: 5px;
-            padding: 2vh;
-            font-family: $T;
-            font-size: 5vh;
+            padding: 5px;
+            font-family: $t;
+            font-size: 4vh;
+            text-align: center;
         }
-        
-        #form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            h2 {
-                text-align: center;
-                font-family: $T;
-            }
-            
-            #email {
-                background-color: $tc;
-                color: $sc;
-                display: block;
-                width: 90%;
-                margin: auto auto 5vh auto;
-                border: 1px solid $sc;
-                border-radius: 5px;
-                padding: 5px;
-                font-family: $t;
-                font-size: 4vh;
-                text-align: center;
-            }
-        }
-
-        #features {
-            display: grid;
-            grid-template-rows: repeat(3, auto);
-            grid-template-columns: 20% 80%;
-            grid-area: 1 / 1 / 4 / 3;
-
-            i.fas {
-                width: 100%;
-                display: block;
-                outline-color: black; 
-                margin: auto;
-                color: $sc;
-            }
-        }
-        
-        #how-it-works {
-            width: inherit;
-            height: 56.25vh;
-
-            #video {
-                width: 100%;
-                height: inherit;
-                display: block;
-                margin: auto;
-                padding: auto;
-            }
-        }
-
-        #pricing {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            .p-heading {font-family: $T;}
-            .box {
-                width: 50%;
-                margin: 5px auto;
-                border: 1px solid black;
-                padding: 5px;
-            }
-            .box, .lorem {text-align: center;}
-            .price {font-weight: bolder;}
-        }
-        
-
     }
+
+    #features {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 20% 80%;
+        grid-area: 1 / 1 / 4 / 3;
+
+        i.fas {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            color: $sc;
+        }
+    }
+    
+    #how-it-works {
+        width: inherit;
+        height: 56.25vh;
+
+        #video {
+            width: 100%;
+            height: inherit;
+            display: block;
+            margin: auto;
+            padding: auto;
+        }
+    }
+
+    #pricing {
+        .p-heading {font-family: $T;}
+        .box {
+            margin: 5px auto;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .box, .lorem {text-align: center;}
+        .price {font-weight: bolder;}   
+    }
+}
+@media (max-width: 1023px) {
+    #pricing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {width: 50%;}
+}
+        
+@media (min-width: 1024px) {
+    #pricing {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box {width: 30%;}
 }
